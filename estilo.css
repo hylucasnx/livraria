@@ -38,6 +38,9 @@ nav a {
     text-decoration: none;
      color:#fff;
      font-weight: bold;
+     padding:5px;
+     border-radius: 10px;
+     transition: 0.4s;
 }
 
 main {
@@ -81,4 +84,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+nav a:hover {
+    background-color:blue;
+    font-size: 20px;
+   
 }
