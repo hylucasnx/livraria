@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <header>
+        <h1>Livraria Fantástica</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Livros</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="Cadastro.html">Cadastro</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
     <section class="container">
-
-    </section>
     <form>
         <fieldset>
             <legend>Cadastro de Livros </legend>
@@ -69,8 +81,35 @@
                     <option value="Terror">Terror</option>
                 </select>
             </div>
+            <div class="input-container">
+                <label>Estado do Livro</label>
+                <div class="radio-group">
+                    <input type="radio" name="situacao" id="novo" value="Novo" required checked>
+                    <label for="novo">Novo</label>
+                  
+                    <input type="radio" name="situacao" id="usado" value="Usado" required>
+                    <label for="usado">Usado</label>
+                </div>
+            </div>
+            <div class="input-container">
+                <label for="resumo">Resumo</label>
+                <textarea name="resumo" id="resumo" placeholder="Resumo do livro" rows="5" required></textarea>
+            </div>
+            <div class="input-container">
+                <label for="capa">Capa</label>
+                <input type="file" name="capa" id="capa" accept="image/*">
+            </div>
+            <div class="actions">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </div>
+            
         </fieldset>
     </form>
-    
+</section>
+</main>
+<footer>
+    <p>&copy; 2023 Livraria Fantástica | Criado por Lucas Trindade</p>
+</footer>
 </body>
 </html>
